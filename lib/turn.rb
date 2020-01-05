@@ -64,24 +64,11 @@ def turn(board)
 #  index = input - 1
   input_to_index(user_input)
   if valid_move?(board, index) == true
-#     turn_count = turn_count + 1
-     if turn_count.odd?
-#        value = "X"
-#     else
-#        value = "O"
-#     end
      move(board, index, value = "X")
      display_board(board)
-     else
-       puts "The move you selected is invalid, pleae try again!"
-#     valid_turn = 2
-       turn(board)
-     end
-#  end
+  else
+     puts "The move you selected is invalid, pleae try again!"
+     turn(board)
+  end
 end
 
-#valid_turn = 0
-#while valid_turn < 10
-#      turn(board)
-#      valid_turn += 1
-#end
