@@ -58,7 +58,7 @@ end
 # TURN  METHOD
 
 def turn(board)
-  puts "Please enter 1-9:"
+  print "Please enter 1-9:"
   user_input = gets.strip
 #  input = user_input.to_i
 #  index = input - 1
