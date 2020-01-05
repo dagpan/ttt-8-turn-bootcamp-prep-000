@@ -32,7 +32,7 @@ end
 # VALID_MOVE?  METHOD
 
 def valid_move?(board, index)
-  if index > 0 && index < 9 
+  if index.between? (0, 8) 
      if position_taken?(board, index) == false
         return true
      else
