@@ -1,4 +1,4 @@
-# DISPLAY_BOARD  METHOD
+#DISPLAY_BOARD  METHOD
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -8,7 +8,7 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-# INPUT_TO_INDEX  METHOD
+#INPUT_TO_INDEX  METHOD
 
 def input_to_index(user_input)
   input = user_input.to_i
@@ -16,13 +16,13 @@ def input_to_index(user_input)
   return index
 end
 
-# MOVE  METHOD
+#MOVE  METHOD
 
 def move(board, index, value)
   board[index] = value
 end
 
-# VALID_MOVE?  METHOD
+#VALID_MOVE?  METHOD
 
 def valid_move?(board, index)
   if index.between?(0, 8) 
@@ -36,7 +36,7 @@ def valid_move?(board, index)
   end
 end
 
-# POSITION_TAKEN?  METHOD
+#POSITION_TAKEN?  METHOD
 
 def position_taken?(board, index)
   if board[index] == "X" || board[index] == "O"
@@ -48,7 +48,7 @@ def position_taken?(board, index)
   end
 end
 
-# TURN  METHOD
+#TURN  METHOD
 
 def turn(board)
   print "Please enter 1-9:"
