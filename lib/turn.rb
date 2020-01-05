@@ -1,10 +1,3 @@
-# TOKEN_BOARD  METHOD
-
-#def token_board(token)
-#    token_value = ["X","O"]
-#    value = token_value[token]
-#end
-
 # DISPLAY_BOARD  METHOD
 
 def display_board(board)
